@@ -11,7 +11,7 @@ License:	LGPL
 Group:		Python/Libraries
 Source0:	http://dl.sourceforge.net/lupy/%{module}-%{version}.tar.gz
 # Source0-md5:	038fd81a6681d5953c051f3998b380be
-URL:		http://www.divmod.org/Home/
+URL:		http://www.divmod.org/Home/Projects/Lupy/
 BuildRequires:	python-devel >= 2.3
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
