@@ -5,15 +5,16 @@
 Summary:	Full-text indexer and search engine
 Summary(pl):	Silnik pe³notekstowego wyszukiwania i indeksowania dokumentów
 Name:		python-%{module}
-Version:	0.1.5.5
-Release:	3
+Version:	0.2.1
+Release:	1
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/lupy/%{module}-%{version}.tar.gz
-# Source0-md5:	038fd81a6681d5953c051f3998b380be
+# Source0-md5:	515ea0b4aab8dd8299480cb9a0da6068
 URL:		http://www.divmod.org/Home/Projects/Lupy/
 BuildRequires:	python-devel >= 2.3
 %pyrequires_eq	python-modules
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,14 +39,12 @@ python setup.py build_ext
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{py_sitedir}
 
 python setup.py install \
 	--root=$RPM_BUILD_ROOT \
-	--install-lib=%{py_sitedir} \
 	--optimize=2
 
-find $RPM_BUILD_ROOT%{py_sitedir} -name \*.py -exec rm {} \;
+find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*.py -exec rm {} \;
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.txt changelog.txt examples PKG-INFO
-%{py_sitedir}/lupy
+%{py_sitescriptdir}/lupy
