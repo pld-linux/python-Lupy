@@ -17,9 +17,9 @@ BuildRequires:	python-devel >= 2.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Lupy is a is a full-text indexer and search engine written in Python.
-It is a port of Jakarta Lucene 1.2 to Python. Specifically, it reads
-and writes indexes in Lucene binary format.
+Lupy is a full-text indexer and search engine written in Python. It is
+a port of Jakarta Lucene 1.2 to Python. Specifically, it reads and
+writes indexes in Lucene binary format.
 
 %description -l pl
 Lupy jest silnikiem umo¿liwiaj±cym pe³notekstowe przeszukiwanie i
