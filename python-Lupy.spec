@@ -8,7 +8,7 @@ Name:		python-%{module}
 Version:	0.1.5.5
 Release:	2
 License:	LGPL
-Group:		Python/Libraries
+Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/lupy/%{module}-%{version}.tar.gz
 # Source0-md5:	038fd81a6681d5953c051f3998b380be
 URL:		http://www.divmod.org/Home/Projects/Lupy/
