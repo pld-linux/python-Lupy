@@ -2,8 +2,8 @@
 %include	/usr/lib/rpm/macros.python
 %define 	module Lupy
 
-Summary:	Full-text indexer and search engine.
-Summary(pl):	Silnik pe³notekstowego wyszukiwania i indeksowania dokumentów.
+Summary:	Full-text indexer and search engine
+Summary(pl):	Silnik pe³notekstowego wyszukiwania i indeksowania dokumentów
 Name:		python-%{module}
 Version:	0.1.5.5
 Release:	1
@@ -15,23 +15,21 @@ URL:		http://www.divmod.org/Home/
 BuildRequires:	python-devel >= 2.3
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Requires:	python >= 2.3
 
 %description
-Lupy is a is a full-text indexer and search engine written in Python. It is a
-port of Jakarta Lucene 1.2 to Python. Specifically, it reads and writes
-indexes in Lucene binary format.
+Lupy is a is a full-text indexer and search engine written in Python.
+It is a port of Jakarta Lucene 1.2 to Python. Specifically, it reads
+and writes indexes in Lucene binary format.
 
 %description -l pl
-Lupy jest silnikiem umo¿liwiaj±cym pe³notekstowe przeszukiwanie i indeksowanie
-dokumentów. Lupy jest portem systemu Jakarta Lucene 1.2 do Pythona. Lupy zapisuje
-i odczytuje indeksy w binarnym formacie Lucene.
+Lupy jest silnikiem umo¿liwiaj±cym pe³notekstowe przeszukiwanie i
+indeksowanie dokumentów. Lupy jest portem systemu Jakarta Lucene 1.2
+do Pythona. Zapisuje i odczytuje indeksy w binarnym formacie Lucene.
 
 %prep
 %setup -q -n %{module}-%{version}
 
 %build
-
 # Build it without warnings
 mv setup.py blah.blah
 sed 's/platform/platforms/' < blah.blah > setup.py
@@ -43,8 +41,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{py_sitedir}
 
 python setup.py install \
-        --root=$RPM_BUILD_ROOT \
-		--install-lib=%{py_sitedir} \
+	--root=$RPM_BUILD_ROOT \
+	--install-lib=%{py_sitedir} \
 	--optimize=2
 
 find $RPM_BUILD_ROOT%{py_sitedir} -name \*.py -exec rm {} \;
