@@ -1,5 +1,4 @@
 
-%include	/usr/lib/rpm/macros.python
 %define 	module	Lupy
 
 Summary:	Full-text indexer and search engine
