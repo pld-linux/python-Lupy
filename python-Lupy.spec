@@ -2,7 +2,7 @@
 %define 	module	Lupy
 
 Summary:	Full-text indexer and search engine
-Summary(pl):	Silnik pe≥notekstowego wyszukiwania i indeksowania dokumentÛw
+Summary(pl.UTF-8):   Silnik pe≈Çnotekstowego wyszukiwania i indeksowania dokument√≥w
 Name:		python-%{module}
 Version:	0.2.1
 Release:	2
@@ -21,9 +21,9 @@ Lupy is a full-text indexer and search engine written in Python. It is
 a port of Jakarta Lucene 1.2 to Python. Specifically, it reads and
 writes indexes in Lucene binary format.
 
-%description -l pl
-Lupy jest silnikiem umoøliwiaj±cym pe≥notekstowe przeszukiwanie i
-indeksowanie dokumentÛw. Lupy jest portem systemu Jakarta Lucene 1.2
+%description -l pl.UTF-8
+Lupy jest silnikiem umo≈ºliwiajƒÖcym pe≈Çnotekstowe przeszukiwanie i
+indeksowanie dokument√≥w. Lupy jest portem systemu Jakarta Lucene 1.2
 do Pythona. Zapisuje i odczytuje indeksy w binarnym formacie Lucene.
 
 %prep
