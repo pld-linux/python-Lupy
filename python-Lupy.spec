@@ -2,7 +2,7 @@
 %define 	module	Lupy
 
 Summary:	Full-text indexer and search engine
-Summary(pl.UTF-8):   Silnik pełnotekstowego wyszukiwania i indeksowania dokumentów
+Summary(pl.UTF-8):	Silnik pełnotekstowego wyszukiwania i indeksowania dokumentów
 Name:		python-%{module}
 Version:	0.2.1
 Release:	2
