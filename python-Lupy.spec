@@ -5,7 +5,7 @@ Summary:	Full-text indexer and search engine
 Summary(pl.UTF-8):	Silnik pełnotekstowego wyszukiwania i indeksowania dokumentów
 Name:		python-%{module}
 Version:	0.2.1
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/lupy/%{module}-%{version}.tar.gz
