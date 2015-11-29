@@ -11,6 +11,7 @@ Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/lupy/%{module}-%{version}.tar.gz
 # Source0-md5:	515ea0b4aab8dd8299480cb9a0da6068
 URL:		http://www.divmod.org/Home/Projects/Lupy/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	python-modules
 BuildRequires:	rpm-pythonprov
